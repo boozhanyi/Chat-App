@@ -7,7 +7,7 @@ import { auth } from "../firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import { Suspense } from "react";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const [currentUser, setCurrentuser] = useState(null);
 
@@ -37,4 +37,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
